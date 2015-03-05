@@ -1,10 +1,13 @@
 package com.android_test.zmh.lu_stationerystoreinventorysystem.StoreScreens;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TabHost;
 
+import com.android_test.zmh.lu_stationerystoreinventorysystem.MainScreens.ClerkMainScreen;
 import com.android_test.zmh.lu_stationerystoreinventorysystem.R;
 
 
@@ -14,6 +17,21 @@ public class CheckLowStockMain extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_low_stock_main);
+        TabHost th = (TabHost)findViewById(R.id.tabHost);
+        th.setup();
+
+        TabHost.TabSpec ts =  th.newTabSpec("LowStockItems");
+        // ts.setContent(R.id.lowStockItems);
+        ts.setIndicator("Low Stock Items");
+        Intent i = new Intent(this, ClerkMainScreen.class);
+       // ts.setContent(i);
+        th.addTab(ts);
+
+        ts =  th.newTabSpec("allStockItems");
+       // ts.setContent(R.id.allItems);
+        ts.setIndicator("All Stock Items");
+        th.addTab(ts);
+
     }
 
 
