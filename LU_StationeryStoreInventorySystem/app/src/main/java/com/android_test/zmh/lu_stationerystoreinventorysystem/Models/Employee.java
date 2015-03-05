@@ -4,7 +4,7 @@ package com.android_test.zmh.lu_stationerystoreinventorysystem.Models;
  * Created by student on 4/3/15.
  */
 public class Employee {
-    private int emp_id;
+    private String id;
     private String type;
     private String name;
     private String gender;
@@ -12,13 +12,14 @@ public class Employee {
     private String email;
     private String phone;
     private String password;
+    private String departmentName;
 
-    public int getEmpId(){
-        return emp_id;
+    private String getID(){
+        return id;
     }
 
-    public void setEmpId(int emp_id){
-        this.emp_id = emp_id;
+    private void setID(String id){
+        this.id = id;
     }
 
     public String getType(){
@@ -75,5 +76,13 @@ public class Employee {
 
     public void setPassword(String password){
         this.password = password;
+    }
+
+    public String getDepartmentName(){
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName){
+        this.departmentName = departmentName;
     }
 }
