@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android_test.zmh.lu_stationerystoreinventorysystem" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_project_log"
@@ -120,6 +122,10 @@
         <activity
             android:name=".StoreScreens.ApproveRejectPurchaseOrderDetail"
             android:label="@string/title_activity_approve_reject_purchase_order_detail" >
+        </activity>
+        <activity
+            android:name=".StoreScreens.ProcessRequisitions"
+            android:label="@string/title_activity_process_requisitions" >
         </activity>
     </application>
 

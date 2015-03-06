@@ -4,6 +4,7 @@
     <string name="app_name">Logic University Stationery Store Inventory System</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
     <string name="loginBtn">Login</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
@@ -34,5 +35,6 @@
     <string name="title_activity_approve_reject_stock_adjustment_detail">ApproveRejectStockAdjustmentDetail</string>
     <string name="title_activity_approve_reject_purchase_order">ApproveRejectPurchaseOrder</string>
     <string name="title_activity_approve_reject_purchase_order_detail">ApproveRejectPurchaseOrderDetail</string>
+    <string name="title_activity_process_requisitions">ProcessRequisitions</string>
 
 </resources>

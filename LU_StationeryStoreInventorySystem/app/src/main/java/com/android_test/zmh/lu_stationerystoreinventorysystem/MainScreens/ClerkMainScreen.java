@@ -16,6 +16,7 @@ import com.android_test.zmh.lu_stationerystoreinventorysystem.DepartmentScreens.
 import com.android_test.zmh.lu_stationerystoreinventorysystem.DepartmentScreens.RequisitionHistory;
 import com.android_test.zmh.lu_stationerystoreinventorysystem.R;
 import com.android_test.zmh.lu_stationerystoreinventorysystem.StoreScreens.CheckLowStockMain;
+import com.android_test.zmh.lu_stationerystoreinventorysystem.StoreScreens.ProcessRequisitions;
 import com.android_test.zmh.lu_stationerystoreinventorysystem.StoreScreens.PurchaseOrder;
 import com.android_test.zmh.lu_stationerystoreinventorysystem.StoreScreens.ReportDiscrepency;
 import com.android_test.zmh.lu_stationerystoreinventorysystem.StoreScreens.RetrievalList;
@@ -39,7 +40,7 @@ public class ClerkMainScreen extends ListActivity {
         Intent i = new Intent();
 
         if(item.equals("Update Profile")){
-            i = new Intent(this, UpdateProfile.class);
+            i = new Intent(this, ProcessRequisitions.class);
         }else if(item.equals("Retrieval List")){
             i = new Intent(this, RetrievalList.class);
         }else if(item.equals("Disbursement List")){
