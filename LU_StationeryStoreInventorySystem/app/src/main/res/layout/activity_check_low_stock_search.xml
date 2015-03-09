@@ -2,16 +2,17 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="8dp" >
+    android:padding="8dp"
+    android:weightSum="1">
 
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+       >
 
         <Spinner
             android:id="@+id/category"
@@ -32,7 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:layout_weight="1"
         android:orientation="horizontal"
         android:id="@+id/stockItem">
 
@@ -87,7 +87,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@color/dodgerblue"
                 android:text="/"
-                android:id="@+id/tex_description"
+                android:id="@+id/text_description"
                 android:layout_weight="1" />
 
         </TableRow>
@@ -146,6 +146,81 @@
 
         </TableRow>
 
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        android:background="@color/whitesmoke">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Report Discrepancy"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/textView"
+                android:layout_column="0" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            >
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/newbalance"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:hint="Enter New Balance"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/reason"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:hint="Enter Discrepancy Reason"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/submit"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:textColor="@color/white"
+            />
+        </TableRow>
     </TableLayout>
 
 </LinearLayout>

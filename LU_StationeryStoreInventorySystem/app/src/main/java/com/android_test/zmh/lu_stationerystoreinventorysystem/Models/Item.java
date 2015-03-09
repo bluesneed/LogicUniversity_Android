@@ -1,83 +1,91 @@
 package com.android_test.zmh.lu_stationerystoreinventorysystem.Models;
 
 
-
+import java.io.Serializable;
 
 /**
  * Created by student on 4/3/15.
  */
-public class Item {
+public class Item implements Serializable {
     private String id;
     private String category;
     private String description;
     private int reorderLevel;
     private int reorderQty;
+    private int balance;
     private int virtualBalance;
     private String status;
     private String uom;
 
-    private String getID(){
+    public String getId() {
         return id;
     }
 
-    private void setID(String id){
+    public void setId(String id) {
         this.id = id;
     }
 
-    private String getCategory(){
+    public String getCategory() {
         return category;
     }
 
-    private void setCategory(String category){
+    public void setCategory(String category) {
         this.category = category;
     }
 
-    private String getDescription(){
+    public String getDescription() {
         return description;
     }
 
-    private void setDescription(String description){
+    public void setDescription(String description) {
         this.description = description;
     }
 
-    private int getReorderLevel(){
+    public int getReorderLevel() {
         return reorderLevel;
     }
 
-    private void setReorderLevel(int reorderLevel){
+    public void setReorderLevel(int reorderLevel) {
         this.reorderLevel = reorderLevel;
     }
 
-    private int getReorderQty(){
+    public int getReorderQty() {
         return reorderQty;
     }
 
-    private void setReorderQty(int reorderQty){
+    public void setReorderQty(int reorderQty) {
         this.reorderQty = reorderQty;
     }
 
-    private int getVirtualBalance(){
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
+
+    public int getVirtualBalance() {
         return virtualBalance;
     }
 
-    private void setVirtualBalance(int remark){
+    public void setVirtualBalance(int virtualBalance) {
         this.virtualBalance = virtualBalance;
     }
 
-    private String getStatus(){
+    public String getStatus() {
         return status;
     }
 
-    private void setStatus(String status){
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    private String getUOM(){
+    public String getUom() {
         return uom;
     }
 
-    private void setUOM(String uom){
+    public void setUom(String uom) {
         this.uom = uom;
     }
-
 }

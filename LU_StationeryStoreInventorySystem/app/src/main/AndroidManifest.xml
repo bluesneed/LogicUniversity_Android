@@ -127,6 +127,14 @@
             android:name=".StoreScreens.ProcessRequisitions"
             android:label="@string/title_activity_process_requisitions" >
         </activity>
+        <activity
+            android:name=".StoreScreens.DisbursementDepartmentList"
+            android:label="@string/title_activity_disbursement_department_list" >
+        </activity>
+        <activity
+            android:name=".StoreScreens.DisbursementDepartmentListDetail"
+            android:label="@string/title_activity_disbursement_department_list_detail" >
+        </activity>
     </application>
 
 </manifest>

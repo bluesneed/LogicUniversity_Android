@@ -50,7 +50,7 @@
             android:id="@+id/item_list"
             android:layout_weight="0.17" />
         <Button
-            android:layout_width="357dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Confirm Collected From Store"
             android:background="@color/green"

@@ -1,11 +1,12 @@
 package com.android_test.zmh.lu_stationerystoreinventorysystem.Models;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by student on 4/3/15.
  */
-public class Disbursement {
+public class Disbursement implements Serializable{
     private String id;
     private Date date;
     private String itemName;
@@ -13,52 +14,51 @@ public class Disbursement {
     private int qty;
     private int actualQty;
 
-
-    private String getID() {
+    public String getId() {
         return id;
     }
 
-    private void setID(String id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    private Date getDate(){
+    public Date getDate() {
         return date;
     }
 
-    private void setDate(Date date){
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    private String getItemName() {
+    public String getItemName() {
         return itemName;
     }
 
-    private void setItemName(String itemName) {
+    public void setItemName(String itemName) {
         this.itemName = itemName;
     }
 
-    private String getDepartmentName() {
+    public String getDepartmentName() {
         return departmentName;
     }
 
-    private void setDepartmentName(String departmentName) {
+    public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
     }
 
-    private int getQty() {
+    public int getQty() {
         return qty;
     }
 
-    private void setQty(int qty) {
+    public void setQty(int qty) {
         this.qty = qty;
     }
 
-    private int getActualQty() {
+    public int getActualQty() {
         return actualQty;
     }
 
-    private void setActualQty(int actualQty) {
+    public void setActualQty(int actualQty) {
         this.actualQty = actualQty;
     }
 }

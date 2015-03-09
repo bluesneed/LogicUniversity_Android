@@ -36,5 +36,9 @@
     <string name="title_activity_approve_reject_purchase_order">ApproveRejectPurchaseOrder</string>
     <string name="title_activity_approve_reject_purchase_order_detail">ApproveRejectPurchaseOrderDetail</string>
     <string name="title_activity_process_requisitions">ProcessRequisitions</string>
+    <string name="title_activity_disbursement_department_list">DisbursementDepartmentList</string>
+    <string name="title_activity_disbursement_department_list_detail">
+        DisbursementDepartmentListDetail
+    </string>
 
 </resources>
